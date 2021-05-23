@@ -4,7 +4,7 @@
       {
           "label": "build",
           "type": "shell",
-          "command": "${workspaceFolder}/gradlew build -b ./build.gradle.kts -x test",
+          "command": "${workspaceFolder}/gradlew build -b ./app/build.gradle.kts -x test",
           "problemMatcher": [],
           "group": {
               "kind": "build",
@@ -14,25 +14,25 @@
       {
           "label": "run",
           "type": "shell",
-          "command": "${workspaceFolder}/gradlew r-b ./build.gradle.kts run",
+          "command": "${workspaceFolder}/gradlew -b ./app/build.gradle.kts run",
           "problemMatcher": []
       },
       {
           "label": "test",
           "type": "shell",
-          "command": "${workspaceFolder}/gradlew -b ./build.gradle.kts test",
+          "command": "${workspaceFolder}/gradlew -b ./app/build.gradle.kts test",
           "problemMatcher": []
       },
       {
           "label": "clean",
           "type": "shell",
-          "command": "${workspaceFolder}/gradlew -b ./build.gradle.kts clean",
+          "command": "${workspaceFolder}/gradlew -b ./app/build.gradle.kts clean",
           "problemMatcher": []
       },
       {
           "label": "check",
           "type": "shell",
-          "command": "${workspaceFolder}/gradlew c-b ./build.gradle.kts heck",
+          "command": "${workspaceFolder}/gradlew -b ./app/build.gradle.kts check",
           "problemMatcher": []
       }
   ]
